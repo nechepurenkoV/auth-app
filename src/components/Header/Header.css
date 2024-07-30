@@ -1,0 +1,102 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.App-header {
+    background-color: #fff;
+    color: #5D867F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-left: 30px;
+}
+
+.main-section :first-child {
+    border-radius: 30px 0 0 30px;
+    border-left: #5D867F solid 2px;
+}
+
+.main-section :last-child {
+    border-radius: 0 30px 30px 0;
+    border-right: #5D867F solid 2px;
+}
+
+.main-elem {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 6px 18px;
+    display: flex;
+    align-items: center;
+    border-top: #5D867F solid 2px;
+    border-bottom: #5D867F solid 2px;
+}
+
+.main-elem:hover {
+    background-color: #5D867F;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: #5D867F;
+}
+
+.btn-login {
+    width: 100px;
+    height: 36px;
+    background-color: #5D867F;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #5D867F;
+    border: #5D867F solid 2px;
+}
+
+.burger-icon {
+    display: none;
+    float: inherit;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .main-section, .header-btn-login {
+        display: none;
+    }
+    .burger-icon {
+        display: flex;
+    }
+    .user-name {
+        display: none;
+    }
+}

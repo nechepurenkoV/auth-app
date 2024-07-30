@@ -1,0 +1,115 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.login-wrapper {
+    z-index: 1;
+    width: 300px;
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+	padding: 30px 25px;
+    border-radius: 20px;
+	transform-origin: top;
+    margin: 15px;
+}
+
+h3 {
+    color: #5D867F;
+    margin: 0;
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+.input-block {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.input-block label {
+    position: absolute;
+    font-size: 12px;
+    color: #5D867F;
+    background-color: #fff;
+    padding: 0 6px;
+    left: 10px;
+}
+
+.input-block input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+	margin-top: 8px;
+	padding: 0 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: black;
+    background-color: #fff;
+    border: #5D867F solid 2px;
+    border-radius: 6px;
+}
+
+.btn-block {
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+.btn-cancel {
+    width: 100px;
+    height: 36px;
+    background-color: #fff;
+    color: #5D867F;
+    border: #5D867F solid 2px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn-cancel:hover {
+    background-color: #fff;
+    color: red;
+    border: red solid 2px;
+}
+
+.btn-login {
+    width: 100px;
+    height: 36px;
+    background-color: #5D867F;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #5D867F;
+    border: #5D867F solid 2px;
+}
+
+.btn-margin-left {
+    margin-left: 8px;
+}
+
+.error-message {
+    color: red;
+    align-self: flex-start;
+}
+
+
+@media (max-width: 767px) {
+    .login-wrapper {
+        max-width: 220px;
+    }
+}
