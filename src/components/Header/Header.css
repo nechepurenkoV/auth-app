@@ -89,6 +89,38 @@ a {
 
 
 
+
+
+.main-mobile {
+    display: none;
+}
+
+.main-mobile-elem {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #5D867F solid 2px;
+    
+}
+
+.btn-mobile-login {
+    width: 100%;
+    height: 46px;
+    background-color: #5D867F;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-bottom: #fff solid 2px;
+    padding: 0;
+}
+
+
+
+
+
 @media (max-width: 767px) {
     .main-section, .header-btn-login {
         display: none;
@@ -98,5 +130,8 @@ a {
     }
     .user-name {
         display: none;
+    }
+    .main-mobile {
+        display: contents;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.css'
 
-function LoginForm(props: { setAuth: (value: any) => void }) {
+function LoginForm(props: { setAuth: (value: any) => void ; setLoginShow: any}) {
   const [login, setLogin] = useState('')
   const [password, setPassword] = useState('')
   const [errorMessage, setErrorMessage] =useState('')
@@ -39,7 +39,7 @@ function LoginForm(props: { setAuth: (value: any) => void }) {
         <div className='error-message'>{errorMessage}</div>
 
         <div className='btn-block'>
-          <button className='btn-cancel roboto-regular' type='button'>Cancel</button>
+          <button className='btn-cancel roboto-regular' type='button' onClick={e => props.setLoginShow(false)}>Cancel</button>
           <button className='btn-login roboto-regular btn-margin-left' type='submit'>Login</button>
         </div>
 

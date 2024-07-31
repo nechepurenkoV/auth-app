@@ -8,14 +8,15 @@ import LoginForm from './components/LoginForm/LoginForm';
 
 function App() {
   const [auth, setAuth] = useState<any>(null)
+  const [loginShow, setLoginShow] = useState<any>(true)
 
   return (
     <div className="App">
-      <Header auth={auth}/>
+      <Header auth={auth} setLoginShow={setLoginShow}/>
 
      <section>
       <BgColor/>
-      {!auth ? <LoginForm setAuth={setAuth}/> : null}
+      {!auth && loginShow ? <LoginForm setAuth={setAuth} setLoginShow={setLoginShow}/> : null}
      </section>
 
       <Footer/>
