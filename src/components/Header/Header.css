@@ -117,6 +117,15 @@ a {
     padding: 0;
 }
 
+.user-name-mobile {
+    color: #5D867F;
+    border-top: #5D867F solid 2px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -132,6 +141,6 @@ a {
         display: none;
     }
     .main-mobile {
-        display: contents;
+        display: block;
     }
 }

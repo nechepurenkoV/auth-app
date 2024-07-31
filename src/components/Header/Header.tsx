@@ -26,7 +26,7 @@ function Header(props: {auth: any; setLoginShow: any}) {
         <a href='#' className='main-mobile-elem roboto-regular' onClick={e => setShowMobile(false)}>Home</a>
         <a href='#' className='main-mobile-elem roboto-regular' onClick={e => setShowMobile(false)}>Contact</a>
         <a href='#' className='main-mobile-elem roboto-regular' onClick={e => setShowMobile(false)}>About</a>
-        {!props.auth ? (<button className='btn-mobile-login roboto-regular' type='button' onClick={e => {props.setLoginShow(true); setShowMobile(false)}}>Login</button>) : (<div className='user-name'>{props.auth.username}</div>)}
+        {!props.auth ? (<button className='btn-mobile-login roboto-regular' type='button' onClick={e => {props.setLoginShow(true); setShowMobile(false)}}>Login</button>) : (<div className='user-name-mobile'>{props.auth.username}</div>)}
       </div> : null}
     </>
   );
