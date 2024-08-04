@@ -18,6 +18,7 @@
 
 .main-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .main-section {
@@ -84,6 +85,16 @@ a {
     right: 30px;
 }
 
+.btn-logout {
+    width: 100px;
+    height: 36px;
+    background-color: #A94622;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-left: 30px;
+}
 
 
 
@@ -117,6 +128,17 @@ a {
     padding: 0;
 }
 
+.btn-mobile-logout {
+    width: 100%;
+    height: 46px;
+    background-color: #A94622;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-bottom: #fff solid 2px;
+    padding: 0;
+}
+
 .user-name-mobile {
     color: #5D867F;
     border-top: #5D867F solid 2px;
@@ -142,5 +164,8 @@ a {
     }
     .main-mobile {
         display: block;
+    }
+    .btn-logout {
+        display: none;
     }
 }

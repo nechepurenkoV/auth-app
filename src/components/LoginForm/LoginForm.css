@@ -78,8 +78,8 @@ h3 {
 }
 .btn-cancel:hover {
     background-color: #fff;
-    color: red;
-    border: red solid 2px;
+    color: #A94622;
+    border: #A94622 solid 2px;
 }
 
 .btn-login {
